@@ -18,4 +18,5 @@ filtered_words = [word for word in words if word not in stopwords if word.isalph
 from collections import Counter
 counter = Counter(filtered_words)
 
-print(counter.most_common(20))
+for word, count in counter.most_common(20):
+        print("%s: %d" % (word, count))
