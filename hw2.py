@@ -7,7 +7,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 stopwords = set(stopwords.words('english'))
 import string
-string.punctuation
+
 stopwords.update(string.punctuation)
 from nltk import wordpunct_tokenize
 
